@@ -16,7 +16,6 @@ public class BirthDate
 
         birth = year - Age;
 
-        System.out.println(birth);
-
+        System.out.print(birth);
     }
 }

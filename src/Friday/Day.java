@@ -20,12 +20,14 @@ public class Day
 
     public void Check()
     {
-        System.out.print("Today is - ");
+        System.out.print("Today is ");
 
         System.out.println(dayOfWeek);
 
-        for (int i = 0; i < 8; i++)
+        for (int i = 0; i < 7; i++)
         {
+            a = a.minusDays(1);
+
             dayOfWeek = a.getDayOfWeek();
 
             if (dayOfWeek == fixFriday)
@@ -36,12 +38,12 @@ public class Day
 
                 break;
             }
-
-            a = a.minusDays(1);
         }
 
-        for (int i = 0; i < 8; i++)
+        for (int i = 0; i < 7; i++)
         {
+            b = b.plusDays(1);
+
             dayOfWeek = b.getDayOfWeek();
 
             if (dayOfWeek == fixFriday)
@@ -53,7 +55,6 @@ public class Day
                 break;
             }
 
-            b = b.plusDays(1);
         }
     }
 }

@@ -8,20 +8,14 @@ public class Input
 
     int age;
 
+    BirthDate birthDate = new BirthDate();
+
     public void Age()
     {
-        System.out.print("Enter your age - ");
+        System.out.print("Enter your age: ");
 
         age = scanner.nextInt();
 
-        BirthDate birthDate = new BirthDate();
-
         birthDate.Date(age);
     }
-
-
-
-
-
-
 }
